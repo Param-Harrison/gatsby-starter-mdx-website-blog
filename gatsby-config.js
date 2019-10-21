@@ -3,7 +3,7 @@ module.exports = {
     title: `Gatsby MDX Starter`,
     author: `Doak Heggeness`,
     description: `An extension of the gatsby starter blog, adding a home page with support for MDX`,
-    siteUrl: `https://gatsby-starter-blog-mdx-demo.netlify.com/`,
+    siteUrl: `https://gatsby-starter-mdx-website-blog.netlify.com/`,
     social: {
       twitter: `doakheggeness`,
     },
@@ -54,12 +54,17 @@ module.exports = {
           {
             resolve: `gatsby-remark-smartypants`,
           },
+          {
+            resolve: `gatsby-plugin-prismjs`,
+          },
         ],
         plugins: [ `gatsby-remark-images`],
       },
     },
+    `gatsby-plugin-emotion`,
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
+    `gatsby-plugin-sitemap`,
     {
       resolve: `gatsby-plugin-google-analytics`,
       options: {
@@ -128,8 +133,8 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `Gatsby Starter Blog`,
-        short_name: `GatsbyJS`,
+        name: `Gatsby Starter Mdx Website & Blog`,
+        short_name: `Gatsby MDX`,
         start_url: `/`,
         background_color: `#ffffff`,
         theme_color: `#663399`,

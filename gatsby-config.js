@@ -55,7 +55,7 @@ module.exports = {
             resolve: `gatsby-remark-smartypants`,
           },
           {
-            resolve: `gatsby-plugin-prismjs`,
+            resolve: `gatsby-remark-prismjs`,
           },
         ],
         plugins: [ `gatsby-remark-images`],

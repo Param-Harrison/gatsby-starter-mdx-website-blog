@@ -5,8 +5,8 @@ import { MDXRenderer } from 'gatsby-plugin-mdx'
 import Bio from '../components/Bio'
 import Layout from '../components/layout'
 import SEO from '../components/seo'
-import { rhythm, scale } from '../utils/typography'
-import '../components/layout.css'
+
+import '../styles/global.css'
 
 class BlogPostTemplate extends React.Component {
   render() {
@@ -21,10 +21,9 @@ class BlogPostTemplate extends React.Component {
         <h1>{post.frontmatter.title}</h1>
         <p
           style={{
-            ...scale(-1 / 5),
             display: `block`,
-            marginBottom: rhythm(1),
-            marginTop: rhythm(-1),
+            marginBottom: '0.5rem',
+            marginTop: '0.5rem',
           }}
         >
           {post.frontmatter.date}
@@ -32,7 +31,7 @@ class BlogPostTemplate extends React.Component {
         <MDXRenderer>{post.body}</MDXRenderer>
         <hr
           style={{
-            marginBottom: rhythm(1),
+            marginBottom: '0.5rem',
           }}
         />
         <Bio />

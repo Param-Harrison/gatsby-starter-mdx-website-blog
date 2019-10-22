@@ -8,6 +8,35 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
+
+.siteContainer {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.siteContainer > * {
+}
+
+.siteContent {
+  display: flex;
+  flex-direction: column;
+  flex: 1 0 auto;
+}
+
+footer {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 0 0 20px 0;
+}
+
+main {
+  margin: 0 auto;
+  max-width: 960px;
+  padding: 0px 1.0875rem 1.45rem;
+  padding-top: 0;
+}
+
 article,
 aside,
 details,
@@ -386,6 +415,7 @@ p {
   padding-top: 0;
   margin-bottom: 1.45rem;
 }
+
 figure {
   margin-left: 0;
   margin-right: 0;
@@ -422,6 +452,7 @@ fieldset {
   margin-bottom: 1.45rem;
 }
 blockquote {
+  font-style: italic;
   margin-left: 1.45rem;
   margin-right: 1.45rem;
   margin-top: 0;
@@ -430,6 +461,7 @@ blockquote {
   padding-right: 0;
   padding-top: 0;
   margin-bottom: 1.45rem;
+  border-left: 5px solid #222222;
 }
 form {
   margin-left: 0;
@@ -515,6 +547,7 @@ li > ul {
   margin-bottom: calc(1.45rem / 2);
   margin-top: calc(1.45rem / 2);
 }
+
 blockquote *:last-child {
   margin-bottom: 0;
 }

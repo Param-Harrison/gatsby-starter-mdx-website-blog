@@ -2,10 +2,10 @@ import { Link } from 'gatsby'
 import PropTypes from 'prop-types'
 import React from 'react'
 import styled from '@emotion/styled'
-import { colors } from '../tokens'
+
 
 const Header = styled('header')`
-  background: ${colors.rebeccapurple};
+  background: rebeccapurple;
   width: 100%;
   padding: 1.5rem 1.0875rem;
   margin-bottom: 1.5rem;
@@ -36,9 +36,9 @@ const Nav = styled('nav')`
     color: DarkGray;
     font-weight: 600;
     transition: all 0.2s;
-    border-bottom: 2px solid ${colors.base}
     &:hover {
       color: white;
+      text-decoration: underline;
     }
   }
 `
@@ -48,19 +48,24 @@ const activeLinkStyle = {
 }
 
 
-const Header1 = ({ siteTitle }) => {
+const Header1 = () => {
   return (
     <Header>
       <Nav>
         <ul>
           <li>
             <Link to="/" activeStyle={activeLinkStyle}>
-            {siteTitle}
+            Gatsby MDX Starter
             </Link>
           </li>
           <li>
             <Link to="/blog/" activeStyle={activeLinkStyle}>
               Blog
+            </Link>
+          </li>
+          <li>
+            <Link to="/about/" activeStyle={activeLinkStyle}>
+              About
             </Link>
           </li>
         </ul>

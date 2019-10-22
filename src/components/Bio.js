@@ -2,7 +2,6 @@ import React from 'react'
 import { StaticQuery, graphql } from 'gatsby'
 import Image from 'gatsby-image'
 
-import { rhythm } from '../utils/typography'
 
 function Bio() {
   return (
@@ -14,14 +13,15 @@ function Bio() {
           <div
             style={{
               display: `flex`,
-              marginBottom: rhythm(2.5),
+              marginBottom: '2.0rem',
+              marginTop: '3rem',
             }}
           >
             <Image
               fixed={data.avatar.childImageSharp.fixed}
               alt={author}
               style={{
-                marginRight: rhythm(1 / 2),
+                marginRight: '0.5rem',
                 marginBottom: 0,
                 minWidth: 50,
                 borderRadius: `100%`,

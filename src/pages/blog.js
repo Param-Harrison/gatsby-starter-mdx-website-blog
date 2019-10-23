@@ -8,9 +8,8 @@ import SEO from '../components/seo'
 
 
 const Article = styled('article')`
-margin-bottom: 2em;
-border-bottom: 1px solid #e9e9e9;
-padding-bottom: 2rem;
+margin-bottom: 0.5em;
+padding-bottom: 0.5rem;
 
 h3 {
   margin-Bottom: .5rem;

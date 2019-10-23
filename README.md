@@ -5,10 +5,10 @@
   </a>
 </p>
 <h1 align="center">
-  Gatsby's MDX Website & Blog starter
+  Gatsby MDX Website & Blog starter
 </h1>
 
-Kick off your project with this website & blog boilerplate. This starter ships with the main Gatsby configuration files you might need to get up and running blazing fast with the blazing fast app generator for React, with support for an MDX website & blog.
+Kick off your project with this website & blog boilerplate. This starter ships with the main Gatsby configuration files you might need to get up and running blazing fast with the blazing fast app generator for React, with support for an MDX website & blog incorporating the CSS-in-JS library Emotion.
 
 _Have another more specific idea? You may want to check out this awesome collection of [official and community-created starters](https://www.gatsbyjs.org/docs/gatsby-starters/)._
 

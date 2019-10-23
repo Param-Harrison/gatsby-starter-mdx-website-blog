@@ -8,7 +8,7 @@ const Header = styled('header')`
   background: rebeccapurple;
   width: 100%;
   padding: 1.5rem 1.0875rem;
-  margin-bottom: 1.5rem;
+  margin-bottom: 2rem;
 `
 
 const Nav = styled('nav')`

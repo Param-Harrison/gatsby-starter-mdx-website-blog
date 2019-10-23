@@ -1,9 +1,35 @@
 import React from 'react'
 import { Link, graphql } from 'gatsby'
-
+import styled from '@emotion/styled'
+import { css } from '@emotion/core'
 import Bio from '../components/Bio'
 import Layout from '../components/layout'
 import SEO from '../components/seo'
+
+
+const Article = styled('article')`
+margin-bottom: 2em;
+border-bottom: 1px solid #e9e9e9;
+padding-bottom: 2rem;
+
+h3 {
+  margin-Bottom: .5rem;
+  text-align: left;
+}
+
+h3 a {
+  color: #001aac;
+  padding: 0 0.125rem;
+  transition: all 150ms linear;
+  text-decoration: none;
+  &:focus,
+  &:active,
+  &:hover {
+    color: #776d7f;
+    text-decoration: underline;
+  }
+}
+`
 
 class BlogIndex extends React.Component {
   render() {
@@ -21,20 +47,15 @@ class BlogIndex extends React.Component {
         {posts.map(({ node }) => {
           const title = node.frontmatter.title || node.fields.slug
           return (
-            <div key={node.fields.slug}>
-              <h3
-                style={{
-                  marginBottom: '0.5rem',
-
-                }}
-              >
-                <Link to={node.fields.slug} style={{ textDecoration: 'none'}}>
+            <Article key={node.fields.slug}>
+              <h3>
+                <Link to={node.fields.slug}>
                   {title}
                 </Link>
               </h3>
               <small>{node.frontmatter.date}</small>
               <p dangerouslySetInnerHTML={{ __html: node.excerpt }} />
-            </div>
+            </Article>
           )
         })}
         <Bio />

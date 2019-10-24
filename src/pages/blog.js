@@ -1,7 +1,6 @@
 import React from 'react'
 import { Link, graphql } from 'gatsby'
 import styled from '@emotion/styled'
-import { css } from '@emotion/core'
 import Bio from '../components/Bio'
 import Layout from '../components/layout'
 import SEO from '../components/seo'

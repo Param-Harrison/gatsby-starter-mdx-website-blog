@@ -15,9 +15,6 @@ body {
   flex-direction: column;
 }
 
-.siteContainer > * {
-}
-
 .siteContent {
   display: flex;
   flex-direction: column;
@@ -265,6 +262,7 @@ h1 {
   text-rendering: optimizeLegibility;
   font-size: 2.25rem;
   line-height: 1.1;
+  color: #591a8b;
 }
 h2 {
   margin-left: 0;

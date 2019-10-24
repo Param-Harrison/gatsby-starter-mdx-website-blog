@@ -16,14 +16,14 @@ h3 {
 }
 
 h3 a {
-  color: #001aac;
+  color: #591a8b;
   padding: 0 0.125rem;
   transition: all 150ms linear;
   text-decoration: none;
   &:focus,
   &:active,
   &:hover {
-    color: #776d7f;
+    color: #380f6b;
     text-decoration: underline;
   }
 }

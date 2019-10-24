@@ -33,7 +33,7 @@ const Nav = styled('nav')`
 
   a {
     text-decoration: none;
-    color: DarkGray;
+    color: #a9a9a9;
     font-weight: 600;
     transition: all 0.2s;
     &:hover {

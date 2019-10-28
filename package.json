@@ -1,12 +1,9 @@
 {
-  "name": "gatsby-starter-blog",
+  "name": "gatsby-starter-mdx-website-blog",
   "private": true,
-  "description": "A starter for a blog powered by Gatsby and Markdown",
+  "description": "A starter website and blog powered by Gatsby and Markdown with MDX",
   "version": "0.1.0",
-  "author": "Kyle Mathews <mathews.kyle@gmail.com>",
-  "bugs": {
-    "url": "https://github.com/gatsbyjs/gatsby/issues"
-  },
+  "author": "Doak Heggeness <doakheggeness@gmail.com>",
   "dependencies": {
     "@emotion/core": "^10.0.21",
     "@emotion/styled": "^10.0.17",
@@ -45,7 +42,7 @@
     "eslint-plugin-react": "^7.11.1",
     "prettier": "^1.14.2"
   },
-  "homepage": "https://github.com/gatsbyjs/gatsby-starter-blog#readme",
+  "homepage": "https://gatsby-starter-mdx-website-blog.netlify.com/",
   "keywords": [
     "gatsby"
   ],
@@ -53,7 +50,7 @@
   "main": "n/a",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/gatsbyjs/gatsby-starter-blog.git"
+    "url": "git+https://github.com/doakheggeness/gatsby-starter-mdx-website-blog.git"
   },
   "scripts": {
     "dev": "gatsby develop",
